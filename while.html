@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>while语句</title>
+        <script type="text/javascript">
+        	// var i=0;
+        	// do{
+        	// 	i+=2;
+
+        	// }while(i<10)
+        	// console.log(i);	
+        	// var i=1;
+        	// var sum=0
+        	// while(i<=100){
+        	// 	sum+=i;
+        	// 	console.log(sum);
+        	// 	i++;
+        	// }
+        	var a=Math.floor(Math.random()*10);
+        	var b=prompt("请输入数字"+a);
+        	    b=parseInt(b);
+        	    while(a!=b){
+        	    	alert("没猜对，还有两次机会");
+        	    	var b=prompt("请输入数字"+a);
+        	            b=parseInt(b);
+        	            if(a==b){
+        	            	break;
+        	            }else{
+        	            	alert("没猜对，还有一次机会");
+        	            	var b=prompt("请输入数字"+a);
+        	                b=parseInt(b);
+        	                if(a==b){
+        	                	break;
+        	                }else{
+        	                	alert("对不起，游戏结束");
+        	                	break;
+        	                }
+        	            }
+        	    }
+        	    if(a==b){
+        	    	alert("恭喜你赢了");
+        	    }else{
+
+        	    }
+        	
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
