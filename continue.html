@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>continue</title>
+        <script type="text/javascript">
+        	var name =prompt("请输入姓名");
+        	var pwd=prompt("请输入密码");
+        	pwd=parseInt(pwd);
+        	while(name!="admin"||pwd!=888){
+        		alert("请重新输入");
+        		var name =prompt("请输入姓名");
+        	    var pwd=prompt("请输入密码");
+        	    pwd=parseInt(pwd);
+        		if(name=="admin"&&pwd==888){
+                       continue;
+
+        		}else{
+        			alert("请重新输入");
+        		}
+        		
+        	}
+        	if(name=="admin"&&pwd==888){
+                       alert("登录成功");
+        		}else{
+        			alert("请重新输入");
+        		}
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
